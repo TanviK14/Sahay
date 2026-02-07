@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #4a90e2, #6a5acd);
+    color: white;
+    position: sticky;
+}
+header {
+    background: #1e3d59;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.domains-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 20px;
+    padding: 40px;
+
+}
+
+.domain-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.domain-card:hover {
+    transform: translateY(-8px);
+    background: #eef3ff;
+}
+
+.domain-card h2 {
+    margin-bottom: 10px;
+}
+
+.info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.info-box span {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.info-box p {
+    margin-top: 20px;
+    line-height: 1.6;
+}
