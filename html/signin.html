@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In | Sahay</title>
+    <link rel="stylesheet" href="/css/signin.css">
+</head>
+<body>
+<header>
+    <div class="logo-title">
+            <img src="/images/logo.png" alt="CivicBridge Logo" class="logo" style="width:80px;height:80px">
+        <div class = "fonts__">
+            <h1 style = "font-size:30px;">Sahay</h1>
+            <h4>From Local Needs to Campus Action</h4>
+        </div>
+    </div>
+    <nav>
+        <a href="/index.html">HOME</a>
+        <a href="college.html">Partnered Colleges</a>
+        <a href="ngo.html">Partnered NGOs</a>
+        <a href="issuepage.html">Our work</a>
+        <a href="domain.html">Raise Issue</a>
+    </nav>
+
+</header>
+<div class="container">
+    <div class="signin-box">
+
+        <h2>Enter your problems</h2>
+        <p id="error"></p>
+        <input type="text" id="name" placeholder="Enter Full name" required>
+        <input type="tel" id="number" placeholder="Enter your phone number" required>
+        <input type="text" id="location" placeholder="Enter Location" required>
+
+        <input type="email" id="email" placeholder="Enter your Email" required>
+        <textarea id="issue" placeholder="Describe the issue" rows="4"></textarea>
+        
+ 
+        <button onclick="findNearestCollege()">Find Nearest College</button>
+        <p id="nearestCollege"></p><br>
+        <input type="hidden" id="collegeName">
+        <button onclick="signIn()">Submit</button>
+
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script src="/javascript/signin.js"></script>
+</body>
+</html>
